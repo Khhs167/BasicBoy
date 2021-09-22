@@ -18,6 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="include\system.bba">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test.bba">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
