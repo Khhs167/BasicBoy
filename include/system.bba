@@ -1,1 +1,69 @@
-﻿
+﻿.IFDEF systemMacros
+.ISDEF systemMacros
+
+; standard commands
+.macro NOP
+	.operation 0x00
+.END
+
+.macro EOP
+	.operation 0xFF
+.END
+
+
+; Registry commands
+
+.macro LDR loc val
+	.operation 0x01 loc val
+.END
+
+
+; Registry logic
+
+.macro AND loc loc2
+	.operation 0x02 loc val
+.END
+
+.macro OR loc loc2
+	.operation 0x03 loc val
+.END
+
+.macro NAND loc loc2
+	.operation 0x04 loc val
+.END
+
+.macro XOR loc loc2
+	.operation 0x05 loc val
+.END
+
+.macro NOR loc loc2
+	.operation 0x06 loc val
+.END
+
+
+; Math
+
+.macro ADD loc loc2
+	.operation 0x07 loc val
+.END
+
+.macro SUB loc loc2
+	.operation 0x08 loc val
+.END
+
+.macro DIV loc loc2
+	.operation 0x09 loc val
+.END
+
+.macro MULT loc loc2
+	.operation 0x0A loc val
+.END
+
+
+; Logic
+
+.macro IFV loc val dst
+	.operation 0x0B loc val dst
+.END
+
+.END
