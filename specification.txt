@@ -1,0 +1,49 @@
+﻿Specs: 
+    64 kb RAM
+    32 kb VIDEO RAM
+    128x128px 1 bit display
+    2 vbuffers
+    
+    1 byte instruction set
+    3 byte ram access locator
+
+Instruction set:
+    0x00 - NOP
+
+    0x01 - LDR [loc] [val]
+
+    0x02 - AND [loc] [loc2]
+    0x03 - OR [loc] [loc2]
+    0x04 - NAND [loc] [loc2]
+    0x05 - XOR [loc] [loc2]
+    0x06 - NOR [loc] [loc2]
+    
+    0x07 - ADD [loc] [loc2]
+    0x08 - SUB [loc] [loc2]
+    0x09 - DIV [loc] [loc2]
+    0x0A - MULT [loc] [loc2]
+
+    0x0B - IFV [loc] [val] [trg]
+
+    0xFF - EOP
+
+
+BBASM specification:
+
+Instructions:
+    .include lib.bba - includes the specified BBASM file
+    .macro name {args} - defines a macro
+    .operation operation {values} - Defines an operation by hex
+    .IFDEF defname - If defname is defined, run everything until the END statement
+    .END - End statement
+    .ISDEF - Maked defname defined
+
+Process:
+
+0. Remove all comments
+1. Include files
+2. Run through IFDEF statements
+3. Define macros
+4. Get macro values
+5. replace all instances of macros to the macro value
+6. Repeat until no macros
