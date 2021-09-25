@@ -9,6 +9,7 @@
 
 Instruction set:
     0x00 - NOP
+    0x0C - GOTO [row]
 
     0x01 - LDR [loc] [val]
 
