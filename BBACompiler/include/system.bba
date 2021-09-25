@@ -1,4 +1,4 @@
-﻿.IFDEF systemMacros
+.IFDEF systemMacros
 .ISDEF systemMacros
 
 ; standard commands
