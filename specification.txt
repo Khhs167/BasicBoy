@@ -36,6 +36,9 @@ Flags:
     VIDEO - 0xFFFF:
         The video flag is currently just one thing, and that is that if the last flag is on, the second buffer areas will render
 
+Keyboard Input:
+    Emulator dependent. Official emulator uses Raylib, so the raylib keybinds.
+
 BBASM specification:
 
 Instructions:
