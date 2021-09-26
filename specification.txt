@@ -9,6 +9,7 @@
 
 Instruction set:
     0x00 - NOP
+    0x0C - GOTO [row]
 
     0x01 - LDR [loc] [val]
 
@@ -27,6 +28,9 @@ Instruction set:
 
     0xFF - EOP
 
+Flags:
+    VIDEO - 0xFFFF:
+        The video flag is currently just one thing, and that is that if the last flag is on, the second buffer areas will render
 
 BBASM specification:
 
