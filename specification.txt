@@ -1,6 +1,9 @@
 ﻿Specs: 
     64 kb RAM
     32 kb VIDEO RAM
+    
+    100 ips(instructions per second) processor
+    
     128x128px 1 bit display
     2 vbuffers
     
