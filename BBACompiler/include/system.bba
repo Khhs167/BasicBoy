@@ -6,6 +6,10 @@
 	.operation 0x00
 .END
 
+.macro GOTO loc
+	.operation 0x0C loc
+.END
+
 .macro EOP
 	.operation 0xFF
 .END
