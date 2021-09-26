@@ -23,6 +23,10 @@ Instruction set:
     0x08 - SUB [loc] [loc2]
     0x09 - DIV [loc] [loc2]
     0x0A - MULT [loc] [loc2]
+    
+    0x0E - LDV [loc] [val]
+    0x0F - LDB [loc] [val]
+    0x10 - PNT [loc] [loc2]
 
     0x0B - IFV [loc] [val] [trg]
 
